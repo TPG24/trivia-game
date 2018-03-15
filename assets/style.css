@@ -1,0 +1,43 @@
+body {
+    font-family: 'Timmana', sans-serif;
+    background: url("photos/Sports.png");
+}
+
+h1 {
+    font-size: 100px;
+}
+
+
+
+#title {
+    padding-top: 5%;
+}
+
+.jumbotron-fluid {
+
+}
+
+#start {
+    padding: 10px 200px;
+    background-color: #4cbb17;
+    border: 2px solid black;
+    font-size: 24px;
+
+}
+
+#start:hover {
+    box-shadow: 0 4px #4cbb17;
+    top: 2px;
+}
+
+#start:active {
+    box-shadow: 0 0px #4cbb17;
+    top: 2px;
+}
+
+#display-holder #start h2 {
+    margin-top: 20px;
+}
+
+
+

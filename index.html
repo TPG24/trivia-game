@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Trivia-Game</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Timmana" rel="stylesheet">
+</head>
+<body>
+
+
+
+<div class="container">
+    <div class="jumbotron-fluid text-center background py-3">
+        <div class="container py-3">
+            <div class="row align-items center">
+                <div class="col-12 col-md-12 my-3">
+                    <div id="title">
+                    <h1><strong>Philadelphia Eagles Trivia</strong></h1>
+                    </div>
+                </div>
+            </div>
+            <div class="row align-items center">
+                <div class="col-12 col-md-12 text-center my-6">
+                    <div id="display-holder">
+                        <button id="start" class="next-btn" onClick="startTimer();"><h2>Start</h2></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div id="questionBox" class="container">
+    <div class="row align-items center">
+        <div class="col-12 col-md-12 py-3">
+    <div id="question" class="question"></div>
+        </div>
+    </div>
+        <div class="row">
+            <div class="col-12 col-md-6 py-1">
+                <label class="option"><input type="radio" name="option" value="1" /> <span id="opt1"></span></label></br>
+    <label class="option"><input type="radio" name="option" value="2" /> <span id="opt2"></span></label>
+            </div>
+
+             <div class="col-12 col-md-6 py-1">
+    <label class="option"><input type="radio" name="option" value="3" /> <span id="opt3"></span></label></br>
+    <label class="option"><input type="radio" name="option" value="4" /> <span id="opt4"></span></label>
+             </div>
+        </div>
+            <div class="row align-item center">
+                <div class="col-12 col-md-12 py-1">
+    <button id="nextButton" class="next-btn" onClick="loadNextQuestion();">Next Question</button>
+                </div>
+            </div>
+
+</div>
+
+</div>
+
+<div id="result" class="container result" style="display:none;">
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="assets/trivalogic.js"></script>
+</body>
+</html>
