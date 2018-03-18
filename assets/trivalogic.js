@@ -56,6 +56,7 @@ var resultCont = document.getElementById('result');
 window.onload = function () {
     $("#display-holder").on("click", stopwatch.start);
     $("#questionBox")
+
 };
 var clockRunning = false;
 var intervalId;
@@ -136,12 +137,19 @@ function loadNextQuestion() {
         container.style.display = 'none';
         resultCont.style.display = '';
         resultCont.textContent = 'Your score is ' +count + '!';
+        clearInterval(intervalId);
+        clockRunning = false;
         return;
     }
     loadQuestion(currentQuestion);
 };
 
-loadQuestion(currentQuestion);
+// loadQuestion(currentQuestion);
 
+// $("#start").on("click", loadQuestion(currentQuestion));
 
+$(document).on("click", "#start", function() {
+    $("#questionBox").show();
+    loadQuestion(currentQuestion);
+});
 
